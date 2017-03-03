@@ -16,7 +16,7 @@ wb = Workbook()
 ws = wb.active
 
 urls = []
-pages = [20, 40]
+pages = [0, 20, 40]
 d = {}
 j = []
 headers = {

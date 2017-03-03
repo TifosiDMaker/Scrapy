@@ -30,7 +30,7 @@ to_addr = ['tifosi19921030@gmail.com','878561409@qq.com']
 smtp_server = 'smtp.qq.com'
 
 l = 1
-ID = 30
+ID =45 
 
 while l > 0:
     conn = mdb.connect('localhost', 'root', 'root')
@@ -38,9 +38,7 @@ while l > 0:
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Connection': 'keep-alive',
-        'Host': 'aqicn.org'
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Connection': 'keep-alive','Host': 'aqicn.org'
     }
     headers['Cookie'] = '__uvt=; __atuvc=1%7C2; waqi-w-station={%22url%22:%22http://aqicn.org/city/beijing/%22%2C%22name%22:%22Beijing%22%2C%22idx%22:1451%2C%22time%22:%22' + getutc() + '%22}; waqi-w-history=[{%22url%22:%22http://aqicn.org/city/beijing/%22%2C%22name%22:%22Beijing%22%2C%22idx%22:1451%2C%22time%22:%22' + getutc() + '%22}%2C{%22url%22:%22http://aqicn.org/city/beijing/us-embassy/%22%2C%22name%22:%22Beijing%20US%20Embassy%22%2C%22idx%22:3303%2C%22time%22:%22' + getutc() + '%22}]; __utmt=1; __utma=42180789.429949210.1484277193.1484543589.1484545824.5; __utmb=42180789.1.10.1484545824; __utmc=42180789; __utmz=42180789.1484534812.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); uvts=5WiImXGj4uGYbyOs'
     url = 'http://aqicn.org/city/beijing/'
